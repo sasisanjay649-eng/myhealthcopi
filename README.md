@@ -196,3 +196,4 @@ If no AI API key or PostgreSQL server is configured:
 
 ## 📄 License
 Educational Open-Source License &copy; 2026 VitaMind AI.
+
