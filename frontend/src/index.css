@@ -416,3 +416,96 @@ button, input, select, textarea {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
+
+/* Modern Web Application Mockup & Bento Grid Styles */
+.app-mockup-frame {
+  background: #FFFFFF;
+  border: 1px solid var(--panel-border);
+  border-radius: 20px;
+  box-shadow: 0 25px 60px -15px rgba(24, 57, 43, 0.12), 0 0 0 1px rgba(168, 230, 193, 0.3);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.app-mockup-frame:hover {
+  box-shadow: 0 30px 70px -15px rgba(24, 57, 43, 0.16), 0 0 0 1px var(--accent-mint);
+}
+
+.mockup-header {
+  background: #F8FCF9;
+  border-bottom: 1px solid var(--panel-border);
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.window-dots {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.window-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+.window-dot.red { background: #FF5F56; }
+.window-dot.yellow { background: #FFBD2E; }
+.window-dot.green { background: #27C93F; }
+
+.mockup-url-bar {
+  background: #FFFFFF;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.78rem;
+  font-family: monospace;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 340px;
+  width: 100%;
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.25rem;
+}
+.bento-col-4 { grid-column: span 4; }
+.bento-col-6 { grid-column: span 6; }
+.bento-col-8 { grid-column: span 8; }
+.bento-col-12 { grid-column: span 12; }
+
+@media (max-width: 992px) {
+  .bento-col-4, .bento-col-6, .bento-col-8 { grid-column: span 12; }
+}
+
+.interactive-chip {
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border: 1px solid var(--panel-border);
+  background: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.interactive-chip:hover {
+  border-color: var(--accent-mint);
+  background: var(--accent-mint-soft);
+  color: #18392B;
+  transform: translateY(-1px);
+}
+.interactive-chip.active {
+  border-color: var(--accent-mint);
+  background: var(--accent-mint-soft);
+  color: #18392B;
+  font-weight: 700;
+}
+
