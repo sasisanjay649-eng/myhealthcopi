@@ -11,6 +11,9 @@ ENV/
 *.sqlite
 *.sqlite3
 backend/.env
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
 
 # Node & Frontend
 frontend/node_modules/
